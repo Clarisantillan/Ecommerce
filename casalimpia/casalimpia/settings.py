@@ -28,7 +28,7 @@ SECRET_KEY = 'django-insecure-bth9@c&1pc!jjjciowckffy&i95-g7pidbx40j7+ej=e4=%*6x
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG =False
 
-ALLOWED_HOSTS = ["Clara.pythonanywhere.com"]
+ALLOWED_HOSTS = ["claridev.pythonanywhere.com"]
 
 
 # Application definition
@@ -85,10 +85,10 @@ WSGI_APPLICATION = 'casalimpia.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
-        'NAME': 'Clara$EcommerceCasa_Limpia',
-        'USER': 'Clara',
+        'NAME': 'claridev$EcommerceCasa_Limpia',
+        'USER': 'claridev',
         'PASSWORD': 'adminadmin',
-        'HOST': 'Clara.mysql.pythonanywhere-services.com',
+        'HOST': 'claridev.mysql.pythonanywhere-services.com',
     }
 }
 #'default': {
