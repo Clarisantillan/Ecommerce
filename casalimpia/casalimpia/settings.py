@@ -28,7 +28,7 @@ SECRET_KEY = 'django-insecure-bth9@c&1pc!jjjciowckffy&i95-g7pidbx40j7+ej=e4=%*6x
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG =False
 
-ALLOWED_HOSTS = ["clari.pythonanywhere.com"]
+ALLOWED_HOSTS = ["Clara.pythonanywhere.com"]
 
 
 # Application definition
