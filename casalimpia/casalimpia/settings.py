@@ -26,9 +26,9 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = 'django-insecure-bth9@c&1pc!jjjciowckffy&i95-g7pidbx40j7+ej=e4=%*6x'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG =False
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ["clari.pythonanywhere.com"]
 
 
 # Application definition
@@ -84,12 +84,17 @@ WSGI_APPLICATION = 'casalimpia.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        #'NAME': BASE_DIR / 'db.sqlite3',
-        'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
+        'ENGINE': 'django.db.backends.mysql',
+        'NAME': 'Clara$EcommerceCasa_Limpia',
+        'USER': 'Clara',
+        'PASSWORD': 'adminadmin',
+        'HOST': 'Clara.mysql.pythonanywhere-services.com',
     }
 }
-
+#'default': {
+       # 'ENGINE': 'django.db.backends.sqlite3',
+        #'NAME': BASE_DIR / 'db.sqlite3',
+       # 'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
 
 # Password validation
 # https://docs.djangoproject.com/en/4.1/ref/settings/#auth-password-validators
@@ -128,6 +133,7 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/4.1/howto/static-files/
 
 STATIC_URL = 'static/'
+STATIC_ROOT= '/home/clari/djangoweb/casalimpia/core/static'
 MEDIA_URL = '/media/'
 MEDIA_ROOT = os.path.dirname(os.path.dirname(__file__))
 
@@ -140,8 +146,8 @@ EMAIL_BACKEND="django.core.mail.backends.smtp.EmailBackend"
 EMAIL_HOST="smtp.gmail.com"
 EMAIL_USE_TLS=True
 EMAIL_PORT=587
-EMAIL_HOST_USER="emailpersonal"
-EMAIL_HOST_PASSWORD="contraseña"
+EMAIL_HOST_USER="clara.santillan.01@gmail.com"
+EMAIL_HOST_PASSWORD="rjsebjipiojlqced"
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 MESSAGE_TAGS={
