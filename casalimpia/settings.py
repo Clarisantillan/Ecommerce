@@ -91,6 +91,16 @@ DATABASES = {
         'HOST': 'claridev.mysql.pythonanywhere-services.com',
     }
 }
+
+
+DATABASES = {'default': {
+        'ENGINE': 'django.db.backends.mysql',
+        'NAME': 'claridev$EcommerceCasa_Limpia',
+        'USER': 'claridev',
+        'PASSWORD': 'adminadmin',
+        'HOST': 'claridev.mysql.pythonanywhere-services.com',
+        'OPTIONS': {'init_command': "SET sql_mode='STRICT_TRANS_TABLES'",} }
+
 #'default': {
        # 'ENGINE': 'django.db.backends.sqlite3',
         #'NAME': BASE_DIR / 'db.sqlite3',
